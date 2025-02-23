@@ -14,18 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         gif.classList.add('gif');
         document.body.appendChild(gif);
 
-        const gif1 = document.createElement('div');
-        gif1.classList.add('gif1');
-        document.body.appendChild(gif1);
-
-        const gif2 = document.createElement('div');
-        gif2.classList.add('gif2');
-        document.body.appendChild(gif2);
-
         setTimeout(() => {
             gif.remove();
-            gif1.remove();
-            gif2.remove();
         }, 3000);
 
         if (playFirstAudio) {
